@@ -1,0 +1,44 @@
+<!--INCLUDE HEADER-->
+{% include  "partials/header.html" %}
+        <!--Translate Body-->
+        <div class="container translator-body">
+            <div class="row">
+                <div class="col-md-6 eng-text-field-container">
+                    <div class="field-header eng-text-field-header">
+                        <button class="field-header-btn field-header-btn-eng">Ingilizcha</button>
+                    </div>
+                    <div class="field-box eng-text-field-box">
+                        <div class="eng-text-field-wrapper">
+                            <div class="eng-text-field" id="text-field" placeholder="Yozing..." contenteditable="true"></div>
+                            <div class="text-field-cleaner-btn-wrapper">
+                                <button class="text-field-cleaner-btn">
+                                    <svg width="3.8rem" height="3.8rem" viewBox="-332.8 -332.8 1177.60 1177.60" xmlns="http://www.w3.org/2000/svg" fill="#808080" stroke="#808080"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>cancel</title> <g id="Page-1" stroke-width="0.00512" fill="none" fill-rule="evenodd"> <g id="work-case" fill="#707070" transform="translate(91.520000, 91.520000)"> <polygon id="Close" points="328.96 30.2933333 298.666667 1.42108547e-14 164.48 134.4 30.2933333 1.42108547e-14 1.42108547e-14 30.2933333 134.4 164.48 1.42108547e-14 298.666667 30.2933333 328.96 164.48 194.56 298.666667 328.96 328.96 298.666667 194.56 164.48"> </polygon> </g> </g> </g></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <p class="char-counter"><span class="counter">0</span> / ∞</p>
+                    </div>
+                </div>
+                <div class="col-md-6 output-field-container">
+                    <div class="field-header output-field-header">
+                        <button class="field-header-btn field-header-btn-output">O'zbekcha</button>
+                    </div>
+                    <div class="output-field-box">
+                        <p class="output-field"></p>
+                        <div class="hide-loader" style="display: none">
+                            <div class="d-flex justify-content-center" id="loader-box">
+                                <div class="spinner-border" role="status">
+                                    <span class="sr-only"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Translate Button-->
+        <div class="container translate-btn-box">
+            <button class="translate-btn" disabled="disabled">Tarjima qiling</button>
+        </div>
+<!--INCLUDE FOOTER-->
+{% include  "partials/footer.html" %}

@@ -1,0 +1,353 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1201px) {
+    /*html font-size*/
+    html {
+        font-size: 18px;
+    }
+
+    /*translator body*/
+    .translator-body {
+        margin-top: 7rem;
+        border-radius: 5px;
+    }
+
+    /*text field active*/
+    .eng-text-field-box.active {
+        border-radius: 3px;
+    }
+
+    /*text-field */
+    .eng-text-field {
+        min-height: 20rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    /*html font-size*/
+    html {
+        font-size: 16px;
+    }
+
+    /*translator body*/
+    .translator-body {
+        margin-top: 11rem;
+        border-radius: 5px;
+    }
+
+    /*text field active*/
+    .eng-text-field-box.active {
+        border-radius: 3px;
+    }
+
+    /*text-field */
+    .eng-text-field {
+        min-height: 20rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+
+    /*translator body*/
+    .translator-body {
+        border-radius: 5px;
+    }
+
+    /*text field active*/
+    .eng-text-field-box.active {
+        border-radius: 3px;
+    }
+
+    /*text-field */
+    .eng-text-field {
+        min-height: 18rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 10px;
+    }
+
+    /*translate body*/
+    .translator-body {
+        margin-top: 10rem;
+        border-radius: 0;
+    }
+
+    /*text field active*/
+    .eng-text-field-box.active {
+        border-radius: 0;
+    }
+
+    /*text-field */
+    .eng-text-field {
+        min-height: 15rem;
+    }
+
+    /*translate button*/
+    .translate-btn {
+        margin-left: 1rem;
+    }
+}
+/*HTML MEDIA QUERY*/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*BASE*/
+body {
+    font-family: "Roboto", "sans-serif";
+    font-weight: 400;
+    background-color: rgba(221, 230, 237, 0.3);
+    color: grey;
+    line-height: 1.7;
+}
+
+/*STYLE*/
+/*NAVIGATION*/
+/*navigation body*/
+#nav-body-wrapper {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.nav-body {
+    background-color: #ffffff;
+}
+
+.nav-btn {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #006C80;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+
+.nav-btn:hover {
+    opacity: 1;
+    color: #006C80;
+}
+
+.nav-btn:active {
+    opacity: 0.3;
+    color: #006C80;
+}
+
+.logo-img {
+    height: 4rem;
+}
+
+.logo-text {
+    font-size: 1.2rem;
+    color: #006C80;
+    text-transform: uppercase;
+}
+
+/*ANNOUNCEMENT BANNER*/
+#announcement-banner {
+    background-color: #006C80;
+    color: #ffffff;
+    padding: .2rem;
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s
+}
+
+#announcement-message {
+    font-size: .7rem;
+    margin: 0;
+}
+
+#ann-close-btn {
+    float: right;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 0 1rem;
+}
+
+/*TRANSLATOR BODY*/
+.translator-body {
+    margin-bottom: 2rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    /*border-radius: 5px;*/
+}
+
+/*eng field container*/
+.eng-text-field-container {
+    border-radius: 3px;
+    padding: 0;
+}
+/*output field container*/
+.output-field-container {
+    background-color: rgba(128, 128, 128, 0.11);
+    padding: 0;
+}
+
+/*field box*/
+.field-box {
+    width: 100%;
+}
+
+/*field header*/
+.field-header {
+    width: 100%;
+    height: 3.5rem;
+    padding: .5rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5);
+    overflow: inherit;
+}
+
+/*field header button*/
+.field-header-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #006C80;
+    border: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    padding: .3rem 1.3rem;
+
+    transition: all .2s;
+}
+
+.field-header-btn:hover {
+    background-color: rgba(221, 230, 237, 0.5);
+}
+
+/*english text field header*/
+
+
+/*english text field box*/
+
+/*english text field wrapper*/
+.eng-text-field-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.text-field-cleaner-btn-wrapper {
+    padding: 1rem;
+    display: none;
+}
+
+.text-field-cleaner-btn {
+    font-weight: 300;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.text-field-cleaner-btn:hover {
+    background-color: rgba(221, 230, 237, 0.3);
+}
+
+
+/*english text field*/
+.eng-text-field {
+    /*min-height: 20rem;*/
+    width: 90%;
+    box-sizing: border-box;
+
+    font-size: 1.5rem;
+    color: #000;
+    line-height: 1.4;
+    padding: 1.5rem;
+
+    border: none;
+    resize: none;
+    outline: none;
+
+    transition: all 0.2s;
+
+}
+
+/*English Text Field Active*/
+.eng-text-field-box.active {
+    /*border-radius: 3px;*/
+    outline: 0.08rem solid #006C80;
+}
+
+div[contenteditable="true"]::before{
+  content: attr(placeholder);
+  color: dimgrey;
+}
+
+/*character counter*/
+.char-counter {
+    float: right;
+    padding: 1rem;
+    transition: all .3s;
+}
+
+/*output field header*/
+.output-field-header {
+    background-color: #fff;
+}
+
+.output-field {
+    min-height: 20rem;
+    font-size: 1.5rem;
+    line-height: 1.4;
+    padding: 1.5rem;
+    margin: 0;
+    transition: all .2s;
+
+    /*background-color: red;*/
+}
+
+/*Translate Button Box*/
+.translate-btn-box {
+    /*background-color: orangered;*/
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.translate-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #006C80;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.hide-loader {
+    display: flex;
+    justify-content: center;
+    min-height: 20rem;
+    align-items: center;
+    z-index: -2;
+}
+
+/*ABOUT-----------------------------------------------------------------*/
+
+
+/*THIRD CSS IMPLEMENTATION----------------------------------------------*/
+.align-items-center {
+    align-items: center;
+}
